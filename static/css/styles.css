@@ -1,5 +1,5 @@
-/* 
-Author URI: http://webthemez.com/ 
+/*
+Author URI: http://webthemez.com/
 Donate to remove backlink form the template.
 */
 
@@ -428,7 +428,7 @@ h2, .h2 {
 	font-size: 30px;
 	font-weight: normal;
 }
-/* Header 
+/* Header
 ----------------------------------------------*/
 #section-top {
 	background: #4E4E4E;
@@ -504,7 +504,7 @@ h2, .h2 {
 	text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 }
 /*.carousel-inner*/
- 
+
 .actionPanel {
 	padding: 25px 0;
 	background: #FFD500;
@@ -792,7 +792,7 @@ color:#fff;
 #contactUs .btn {
 	border-radius: 0px !important;
 	border: 0px !important;
-	background: #FFD500; 
+	background: #FFD500;
 }
 nav#filter {
 	margin-bottom: 1.5em;
@@ -1034,7 +1034,7 @@ nav#filter li {
 }
 .contact-parlex {
 	padding-top: 0px;
-	background-image: url('../images/banner-bg.jpg');
+	background-image: url('../images/banner-bg.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
