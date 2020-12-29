@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Linda's Playlists</title>
+<title>BOOK A VET</title>
 <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
 <link rel="stylesheet" type="text/css" href="static/css/bulma.css" />
 <link rel="stylesheet" href="static/css/bootstrap.min.css" />
@@ -26,9 +26,8 @@
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
           <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#create" class="scroll-link">Create playlists</a></li>
-          <li><a href="#sort" class="scroll-link">Arrange songs into playlists</a></li>
-          <li><a href="#karaoke" class="scroll-link">Karaoke</a></li>
+          <li><a href="#create" class="scroll-link">BOOK A VET</a></li>
+          <li><a href="#sort" class="scroll-link">REGISTER YOUR PRAXIS</a></li>
           <li><a href="#about" class="scroll-link">About</a></li>
           <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
@@ -48,7 +47,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("static/softbg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("static/banner_bg.png");
   height: 100%;
   background-position: center;
   position: relative;
@@ -117,154 +116,11 @@ body, html {
 <div class="hero-image">
 <section id="home">
   <div class="hero-text">
-    <h1 style="font-size:40px">GAIN CONTROL OVER YOUR MUSIC RECOMMENDATIONS</h1>
-    <h2>Create perfect playlists</h2>
-    <a href="#create"><button style="margin-top: 200px;margin-left: -700px">Create a new playlist</button></a>
-    <a href="#existing"><button style="margin-top: 200px;margin-right: -700px">Sort existing playlists</button></a>
+    <h1 style="font-size:40px">COMING SOON</h1>
+    <h2>Book your pet's next veterinarian consultation in just a few clicks</h2>
+    <a href="#create"><button style="margin-top: 200px;margin-left: -700px">Book a vet</button></a>
+    <a href="#existing"><button style="margin-top: 200px;margin-right: -700px">Register as vet</button></a>
   </div>
-</section>
-</div>
-
-    <!-- .section -->
-<div class="hero-image2">
-<section id="create">
-<div class="hero-text2">
-  <h1 style="font-size:40px; margin-top: 0px; padding: 20px 180px 10px 20px">Create a new spotify playlist</h1>
-  <p style="font-size: 20px; color: #000000; padding: 20px 180px 10px 20px">Find tracks that fit your preferences.</p>
-  <p style="font-size: 20px; color: #000000; padding: 20px 180px 50px 20px">The playlist that will be created will be sorted by tempo to recreate the DJ set exprience</p>
-</br></br></br>
-    <form action="/algo_input" method="POST">
-      <div class="container has-text-centered">
-        <div class="columns is-vcentered is-12">
-          <div class="dropdown is-active column is-2" style="margin-top: 100px">
-            <div class="search_categories" id="dropdown-menu3" role="menu">
-              <select class="select" name="genre" id="genre-select">
-                <div class="select">
-                  <option value="" class="select" disabled selected>Mood</option>
-                {% for genre in genres %}
-                  <option {{genre}}>{{genre.capitalize()}}</option>
-                {% endfor %}
-                </div>
-              </select>
-            </div>
-          </div>
-          <div class="dropdown is-active column is-2" style="margin-top: 100px">
-           <div class="search_categories" id="dropdown-menu3" role="menu">
-              <select class="select" name="decade" id="decade-select">
-                <div class="select">
-                  <option value="" class="select" disabled selected>Decade</option>
-                {% for decade in decades %}
-                  <option value="{{decade}}">{{decade.capitalize()}}</option>
-                {% endfor %}
-                </div>
-              </select>
-            </div>
-          </div>
-          <div class="dropdown is-active column is-2" style="margin-top: 100px">
-            <div class="search_categories" id="dropdown-menu3" role="menu">
-              <select class="select" name="length" id="length-select">
-                <div class="select">
-                  <option value="" class="select" disabled selected>Time</option>
-                {% for length in lengths %}
-                  <option value="{{length}}">{{length.capitalize()}}</option>
-                {% endfor %}
-                </div>
-              </select>
-            </div>
-          </div>
-          <div class="dropdown is-active column is-2" style="margin-top: 100px">
-            <div class="search_categories" id="dropdown-menu3" role="menu">
-              <select class="select" name="popularity" id="popularity-select">
-                <div class="select">
-                  <option value="" class="select" disabled selected>Popularity</option>
-                {% for popularity in popularities %}
-                  <option value="{{popularity}}">{{popularity.capitalize()}}</option>
-                {% endfor %}
-                </div>
-              </select>
-            </div>
-          </div>
-          <div class="field is-active column is-2" style="margin-top: 110px">
-              <input class="input-select" type="text" placeholder="Name it" name="playlist_name">
-          </div>
-          <div class="column is-active is-active is-2" style="margin-top: 110px">
-            <input class="custom-button" type="submit" value="Create it">
-          </div>
-        </div>
-      </div>
-    </form>
-  </section>
-</div>
-
-
-<div class="hero-image3">
-<section id="sort">
-<div class="hero-text2">
-  <h1 style="font-size:40px; margin-top: 0px; padding: 20px 180px 10px 20px">Sort your favorite songs into organized playlists</h1>
-  <p style="font-size: 20px; color: #000000; padding: 20px 180px 10px 20px">Organize your existing saved tracks into playlists that make sense</p>
-</br></br></br>
-</div>
-</section>
-</div>
-
-<div class="hero-image4">
-<section id="karaoke">
-<div class="hero-text2">
-  <h1 style="font-size:40px; margin-top: 0px; padding: 20px 180px 10px 20px">Start your own Karaoke</h1>
-  <form action="/karaoke_start" method="POST">
-    <div class="container has-text-centered">
-    <div class="columns is-vcentered is-12">
-    <div class="dropdown is-active column is-2" style="margin-top: 100px">
-      <div class="search_categories" id="dropdown-menu3" role="menu" style="width: 300px;">
-        <select class="select" name="pl_name" id="pl_name-select">
-          <div class="select">
-            <option value="" class="select" disabled selected>Choose a Playlist</option>
-              {% for pl_name in pl_names %}
-            <option value="{{pl_name}}">{{pl_name.capitalize()}}</option>
-              {% endfor %}
-          </div>
-        </select>
-      </div>
-    </div>
-    <div class="column is-active is-active is-2" style="margin-left: -100px;margin-top: 200px;width: 320px;color:  #000000;">
-      <input class="custom-button" type="submit" value="Start" style="color: black">
-    </div>
-  </div></div>
-  </form>
-</div>
-</section>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </section>
 </div>
 
