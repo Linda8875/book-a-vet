@@ -4,7 +4,7 @@
 
 /*
 Theme by: WebThemez.com
-Note: donate to remove backlink form the site
+Note: Please use our back link in your site
 */
 $( function() {
         var endDate = "December  28, 2015 15:03:25";
@@ -100,6 +100,7 @@ $('document').ready(function () {
 	 $.backstretch([
       "images/img1.jpg"
     , "images/img2.jpg"
+    , "images/img3.jpg"
   ], {duration: 3000, fade: 1250});
   
     customScripts.init();
